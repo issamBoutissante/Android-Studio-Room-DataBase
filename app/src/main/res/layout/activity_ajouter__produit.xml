@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ajouter_Produit"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/codeEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Code produit"/>
+    <EditText
+        android:id="@+id/disignationEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Designation"/>
+    <EditText
+        android:id="@+id/prixUnitaireEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prix Unitaire"
+        android:inputType="numberDecimal"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Porduit"
+        android:onClick="ajouterProduit"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:onClick="backToMenu"/>
+</LinearLayout>
